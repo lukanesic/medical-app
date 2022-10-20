@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react'
 
-function App() {
+import Hero from './components/Hero'
+import Patients from './components/Patients'
+import PatientSection from './components/PatientSection'
+import Login from './pages/Login'
+
+import { Routes, Route } from 'react-router'
+import { useNavigate } from 'react-router'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path='/' exact element={<Admin />} />
+      {/* <Route path='/admin' exact element={<Admin />} /> */}
+    </Routes>
+  )
 }
 
-export default App;
+const Admin = () => {
+  const admin = localStorage.getItem('admin')
+
+  const navigate = useNavigate()
+
+  // useEffect(() => {
+  //   if (!admin) {
+  //     navigate('/')
+  //   }
+  // }, [admin, navigate])
+
+  return (
+    <div className='app-container'>
+      <Hero />
+      <Patients />
+      <PatientSection />
+    </div>
+  )
+}
+
+export default App

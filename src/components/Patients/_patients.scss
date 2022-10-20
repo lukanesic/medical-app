@@ -1,0 +1,22 @@
+@import './Header/header';
+@import './Search/search';
+@import './Patient/patient';
+
+.patients {
+  width: 40%;
+  padding: 3rem 3rem;
+  overflow: scroll;
+  border-right: 1px solid rgb(180, 228, 255);
+
+  .patients-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 3rem;
+    grid-gap: 1rem;
+  }
+
+  .no-patients {
+    color: rgb(0, 95, 149);
+    font-weight: 400;
+  }
+}

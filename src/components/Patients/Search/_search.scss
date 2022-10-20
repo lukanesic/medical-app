@@ -1,0 +1,27 @@
+.search {
+  border: 1px solid rgb(46, 178, 255);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+
+  color: rgb(46, 178, 255);
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+
+  input {
+    margin: 0rem 2rem;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-size: 1.1rem;
+    color: rgb(46, 178, 255);
+    background-color: transparent;
+  }
+
+  input::placeholder {
+    color: rgb(46, 178, 255);
+  }
+}

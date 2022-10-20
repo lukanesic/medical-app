@@ -1,0 +1,54 @@
+.button {
+  border: 1px solid #fff;
+  margin: 2rem 0;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  width: fit-content;
+
+  .plus {
+    font-size: 2rem;
+    color: rgb(46, 178, 255);
+    transition: color 0.5s ease;
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: rgb(46, 178, 255);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    transition: color 0.5s ease;
+  }
+}
+
+.dark {
+  background: rgb(46, 178, 255);
+  margin-left: 3rem;
+  transition: background 0.5s ease;
+
+  .plus {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+}
+
+.dark:hover {
+  background-color: rgb(46, 178, 255);
+}
