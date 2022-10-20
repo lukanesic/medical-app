@@ -670,7 +670,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #eeeeee;
+  background-color: #fff;
 }
 
 .login {
