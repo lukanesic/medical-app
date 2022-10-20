@@ -664,13 +664,20 @@ p {
 }
 
 .app-container {
-  height: 100vh;
-  min-width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #fff;
+  display: none;
+}
+
+@media (min-width: 1500px) {
+  .app-container {
+    display: block;
+    max-width: 1700px;
+    height: 100vh;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
 }
 
 .login {
